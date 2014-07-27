@@ -1,0 +1,233 @@
+Answer these below Questions:
+
+
+
+
+What jdk contains or composed of and define each components? 
+
+1- Java Compiler: It is used to compile java files.
+2- Java Interpreter: It is used to interpret the java files that are compiled by java compiler.
+3- Java Disassembler: It's used to disassemble java class file.
+4- Java Header File Generator: It's used to generate C langauge header files and source files to implement the native methods.
+5- Java Documentation: It's required foe easy maintenance of code.
+6- Java Applet Viewer: It's used to view the java Applets.
+
+------------------------------------------------------------------------------------------------------------------------
+What is IDE?
+
+Integrated Development Environment: is a software application that provides comprehensive facilities 
+									to computer programmers for software development.
+									
+------------------------------------------------------------------------------------------------------------------------
+What are the IDEs available in the market to support java?
+
+1- IntelliJ IDEA
+2- NetBeans
+3- Eclipse
+4- GlassFish Server
+6- Notepad
+
+------------------------------------------------------------------------------------------------------------------------
+Explain the entire java life cycle.
+
+Java life cycle:
+
+1- Editor 
+2- Source Code
+3- Java Compiler
+4- Byte code
+5- JVM
+6- Operating System
+
+When you write a source code using either notepad or eclipse IDE, it needs to be converted into 
+byte code using javac compiler. Byte code is in the form of .class .  The class file then loads into the 
+JVM using java loader . The JVM then send all the information to the operating system which shows you the output.
+
+------------------------------------------------------------------------------------------------------------------------
+what is class?
+
+class is an extensible program code template for creating objects, providing initial values for variables
+and implementations of methods.
+
+------------------------------------------------------------------------------------------------------------------------
+What is object?
+
+An object is an instance of a class. The relationship is such that many objects can be created using one class. 
+Each object has its own data but its underlying structure 
+(i.e., the type of data it stores, its behaviors) are defined by the class.
+
+------------------------------------------------------------------------------------------------------------------------
+
+What is the entry point of an application?
+
+The main Method
+
+------------------------------------------------------------------------------------------------------------------------
+Why main is static?
+
+The main method is static because they can be invoked by the runtime engine without having
+to instantiate an instance of the parent class. 
+
+It means the Java virtual machine (JVM) interpreter can call the program's main method to 
+start the program (public) without creating an instance of the class (static), and the program 
+does not return data to the Java VM interpreter (void) when it ends.
+
+------------------------------------------------------------------------------------------------------------------------
+
+What is the difference between an Interface and Abstract class?
+
+The Main difference is methods of a Java interface are implicitly abstract and cannot have implementations. 
+A Java abstract class can have instance methods that implements a default behavior. 
+Variables declared in a Java interface is by default final. An abstract class may contain non-final variables.
+
+Interface: An interface is a contract between a class and the outside world. We cannot create an instance 
+from an interface. It only has methods to declare without body. To inherit from interface used implement.
+Abstract: We cannot create an instance from an abstract class. Some features we built and some we have not yet. 
+To inherit from an abstract class use extend.
+
+------------------------------------------------------------------------------------------------------------------------
+Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
+
+We can inherit an Interface and an Abstract class. To inherit the interface we used the keyword implement.
+And to make an object from an Abstract class we have to inherit the class first by using the keyword extends.
+
+------------------------------------------------------------------------------------------------------------------------
+what is Access Specifier?
+
+An Access Specifier is the permission to the class or method, etc. It is used to control 
+the access to the class, method, etc. an example is public, private.
+
+------------------------------------------------------------------------------------------------------------------------
+What is OOP ? Define each feature of java OOP.
+
+programming method that combines: Data, Instructions for processing that data into a self-sufficient ‘object’ 
+that can be used within a program or in other programs.
+
+There are four features of OOP:
+1) Abstraction: 	Implementation Hiding. The purpose of abstraction is to hide information that is not relevant or 
+					rather show only relevant information and to simplify it by comparing it to something similar in 
+					the real world. Ex. Interface ---> Abstraction class  ---> Concrete class.
+
+2) Encapsulation: 	Data hiding using Access Specifiers.Objects encapsulate data and implementation details to the outside world.
+3) Inheritance: 	The process by which one class acquires the properties and functionalities of another class. Ex. A--> B --> C.
+4) Polymorphism: 	is a feature that allows one interface to be used for a general class of actions. It’s an operation may 
+   					exhibit different behavior in different instances. Multiple method could have the same name but different 
+   					signature(Parameter).
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+What is API? Name list of API that you have used so far.
+
+Application programming interface: It specifies how some software components should interact with each other.
+
+APIs I used:
+Array, ArrayList, Scanner, Buffer, BufferedReader, BufferedWriter, Calendar,Enum, EventListener, Exception,
+HashMap, Hashtable, JOptionPane, Queue, Stack, LinkedList, Vector, Graph
+
+------------------------------------------------------------------------------------------------------------------------
+Does java support multiple inheritance?
+
+No. Java does not support multiple inheritance
+------------------------------------------------------------------------------------------------------------------------
+What is method overloading and when it happens?
+
+Method overloading: It's one type of Polymorphism. It's called overloading because we use the same method 
+we just have unique parameter or different signature. It happens in compile time. 
+
+------------------------------------------------------------------------------------------------------------------------
+What is method overriding and when it happens?
+
+Method overriding: It's also a type of Polymorphism. It's called overriding because we do some changes to the 
+actual out without changing the parameter or the signature ex. a+b+c+2. It happens in run time.
+
+------------------------------------------------------------------------------------------------------------------------
+Explain exceptions in java and how to handle it.
+
+Exception in java is used to handle errors. ex. 4/0. The compiler would not know how to handle it.
+To handle exceptions in java we used the try, catch, and finally blocks.
+We try the block if it fails we catch the error.
+
+------------------------------------------------------------------------------------------------------------------------
+What is static keyword in java? How it has been used in variables and methods ?
+
+In Java, a static member is a member of a class that isn’t associated with an instance of a class. Instead, the member 
+belongs to the class itself. As a result, you can access the static member without first creating a class instance.
+
+A Static variables: A field that’s declared with the static keyword, like this: private static String CompanyName;
+The value of a static field is the same across all instances of the class. In other words, if a class has a static 
+field named CompanyName, all objects created from the class will have the same value for CompanyName.
+
+Static method: A method declared with the static keyword. Like static fields, static methods are associated with the 
+class itself, not with any particular object created from the class. As a result, you don’t have to create an object
+from a class before you can use static methods defined by the class.
+
+------------------------------------------------------------------------------------------------------------------------
+What is final and how it has been used variables and methods?
+
+final: mean that the entity that is used with cannot be change later on.
+We use final with classes, methods and variables.
+
+public final class MyFinalClass {...}
+public final void MyFinalMethod() {...}
+public static final double PI = 3.141592653589793;
+
+------------------------------------------------------------------------------------------------------------------------
+What is final, finally and finalize?
+
+final: 		The final keyword is used to declare constants.
+Finally: 	Anything inside of the "finally" clause will be executed regardless of if the code in the 
+		 	'try' block throws an exception or not.
+Finalize: 	is called by the JVM before an object is about to be garbage collected. 
+
+------------------------------------------------------------------------------------------------------------------------
+What is a constructor ?
+
+A constructor is a special method of a class that initializes an object of that type. 
+A constructor is an instance method that usually has the same name as the class, and can be 
+used to set the values of the members of an object, either to default or to user-defined values
+
+------------------------------------------------------------------------------------------------------------------------
+What is "this" keyword in java ?
+
+this: "this" keyword acts like a pointer to the scope of a class.
+this is a reference to the current object — the object whose method or constructor is being called. 
+You can refer to any member of the current object from within an instance method or a constructor by using this.
+
+------------------------------------------------------------------------------------------------------------------------
+What is JVM stand for ?
+
+Java Virtual Machine
+
+------------------------------------------------------------------------------------------------------------------------
+What version of java are you using?
+
+My Java Version: 1.7.0
+
+------------------------------------------------------------------------------------------------------------------------
+What is JAR stand for ?
+
+JAR: stand for "Java ARchive"
+
+------------------------------------------------------------------------------------------------------------------------
+What is compile time and run time?
+
+Compile-time: the time period in which you, the developer, are compiling your code.
+Run-time: the time period which a user is running your piece of software.
+
+------------------------------------------------------------------------------------------------------------------------
+What is heap?
+
+Heap: it is a section in the memory that hold objects.
+
+------------------------------------------------------------------------------------------------------------------------
+How java manage it's memory?
+
+In Java, Memory Management is done by "Garbage Collection".
+Memory is allocated only to objects. There is no explicit allocation of memory, there is only the creation of new objects.
+
+
+
+
+
+
